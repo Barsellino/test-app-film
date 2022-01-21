@@ -1,0 +1,87 @@
+@import "variables";
+
+.main-page {
+  &__selector {
+    width: 500px;
+    margin: 30px auto!important;
+  }
+}
+
+.all-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    padding: 20px;
+  }
+  &__wrap {
+    position: relative;
+  }
+
+  &__filter {
+    position: absolute;
+    top: 0;
+    width: 27vw;
+    height: 99.2%;
+    background: black;
+    z-index: 2;
+    opacity: 0;
+    transition: .4s;
+    cursor: pointer;
+    p {
+      text-align: center;
+      margin: 0 auto;
+      color: white;
+      font-size: 20px;
+      padding: 300px 0 0 0;
+      cursor: pointer;
+    }
+    &:hover {
+      width: 27vw;
+      opacity: 56%;
+    }
+  }
+
+  &__img {
+    width: 27vw;
+    cursor: pointer;
+
+    &:hover {
+      width: 28vw;
+    }
+  }
+
+  &__additional {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none;
+      width: 27vw;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        overflow: hidden;
+
+        .key {
+          color: #fff;
+          flex-basis: 180px;
+        }
+
+        .val {
+          color: rgba(255, 255, 255, .5);
+          flex-basis: calc(100% - 180px);
+        }
+
+        .age_hint {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.session {
+  width: fit-content;
+  border-radius: 4px;
+  background: blueviolet;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 3px;
+  margin: 1px;
+}
+.sessions {
+  width: 20vw;
+  &__buttons{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.film {
+  padding: 45px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+
+  &__img img {
+    width: 27vw;
+  }
+
+  &__info {
+    min-width: 40vw;
+  }
+}
+
